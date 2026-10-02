@@ -1,0 +1,54 @@
+Command: vcs -full64 -lca -sverilog -kdb -debug_access+all +define+SAIF+FSDB -cm \
+line+cond+branch+tgl+fsm -cm_hier coverage.hier moore.sv mealy.sv sistema.sv top_tb.sv \
+-top top_tb -o simv -l compile.log
+                         Chronologic VCS (TM)
+      Version X-2025.06-SP2-6_Full64 -- Thu Oct  1 17:21:03 2026
+
+                    Copyright (c) 1991 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file 'moore.sv'
+Parsing design file 'mealy.sv'
+Parsing design file 'sistema.sv'
+Parsing design file 'top_tb.sv'
+Top Level Modules:
+       top_tb
+TimeScale is 1 ns / 1 ps
+VCS Coverage Metrics Release X-2025.06-SP2-6_Full64 Copyright (c) 1991-2025 by Synopsys Inc.
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, no re-compilation is necessary.
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/synopsys/vcs/X-2025.06-SP2-6/linux64/lib -L/usr/synopsys/vcs/X-2025.06-SP2-6/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o  _677731_archive_1.so \
+_prev_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -ldistsimclient \
+-lsimprofile -lreader_common /usr/synopsys/vcs/X-2025.06-SP2-6/linux64/lib/libBA.a \
+-luclinative /usr/synopsys/vcs/X-2025.06-SP2-6/linux64/lib/vcs_tls.o   -Wl,-whole-archive \
+-lvcsucli    -Wl,-no-whole-archive       _vcs_pli_stub_.o   /usr/synopsys/vcs/X-2025.06-SP2-6/linux64/lib/vcs_save_restore_new.o \
+/usr/synopsys/verdi/Y-2026.03-SP2//share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread \
+-ldl 
+../simv up to date
+CPU time: .452 seconds to compile + .317 seconds to elab + .338 seconds to link
+Verdi KDB elaboration done and the database successfully generated

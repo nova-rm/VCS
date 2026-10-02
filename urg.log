@@ -1,0 +1,8 @@
+Command: urg -full64 -dir simv.vdb -report coverage_report -format both -log urg.log
+Date: Thu Oct  1 17:21:07 2026
+
+URG Version X-2025.06-SP2-6 Copyright (c) 1991-2025 by Synopsys Inc.
+
+Note-[URG-RDG] Report directory generated
+  Report written to directory coverage_report
+

@@ -1,0 +1,7 @@
+Origen: Parcial_1_fixed_finalisimo.circ
+SHA256: 06179d35532484cccae988efaf68a4f17758afd98415a072a7a13a943ae84a5d
+Red combinacional extraida: Moore 64 filas; Mealy 256 filas.
+Equivalencia aritmetica de Mealy: 256/256 combinaciones verificadas.
+Referencia integrada: 2048 filas, orden C[2:0],P[2:0],SEL15,SEL25,B20,B10,B5.
+Cada palabra hexadecimal: next_C[2:0],next_P[2:0],MODE15,MODE25,IMPRIME15,IMPRIME25,COMPLETE,C5,C10,C15.
+Correccion de reset: cable nuevo (480,285)-(480,290) en Moore. Original intacto.

@@ -1,0 +1,22 @@
+Command: /home/rrivera/laboratorio_fsm_codex_20261001/./simv -cm line+cond+branch+tgl+fsm -l simulation.log
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP2-6_Full64; Runtime version X-2025.06-SP2-6_Full64;  Oct  1 17:21 2026
+*Verdi* Loading libsscore_vcs202506.so
+FSDB Dumper for VCS, Release Verdi_Y-2026.03-SP2, Linux x86_64/64bit, 08/29/2026
+(C) 1996 - 2026 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'ondas.fsdb'
+*Verdi* : Begin traversing the scope (top_tb), layer (0).
+*Verdi* : End of traversing.
+PASS: 9671 checks, 4541 cycles; waiting-state input cases 512/512
+$finish called from file "top_tb.sv", line 86.
+$finish at simulation time             57190000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 57190000 ps
+CPU Time:      0.400 seconds;       Data structure size:   0.0Mb
+Thu Oct  1 17:21:06 2026
